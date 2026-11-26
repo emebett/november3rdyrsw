@@ -8,6 +8,7 @@
   <!-- Abebe: Addition -->
   <button onclick="add()">Add (+)</button>
   <button onclick="sub()">sub (-)</button>
+  <button onclick="multi()">sub (*)</button>
   <!-- TEAM BUTTONS PLACEHOLDER -->
   <h3>Result: <span id="res">0</span></h3>
     
@@ -23,6 +24,11 @@
       let a = Number(document.getElementById("num1").value);
       let b = Number(document.getElementById("num2").value);
       document.getElementById("res").innerText = a - b;
+    }
+     function multi() {
+      let a = Number(document.getElementById("num1").value);
+      let b = Number(document.getElementById("num2").value);
+      document.getElementById("res").innerText = a * b;
     }
   </script>
 </body>
