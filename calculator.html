@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><title>Team Calculator - november3rdyrsw</title></head>
+
+<head>
+  <title>Team Calculator - november3rdyrsw</title>
+</head>
+
 <body>
   <h2>november3rdyrsw Team Calculator</h2>
   <input type="number" id="num1" placeholder="First number">
@@ -8,10 +12,11 @@
   <!-- Abebe: Addition -->
   <button onclick="add()">Add (+)</button>
   <button onclick="sub()">sub (-)</button>
+  <button onclick="divide()">Divide (/)</button>
   <!-- TEAM BUTTONS PLACEHOLDER -->
   <h3>Result: <span id="res">0</span></h3>
-    
-  
+
+
   <script>
     function add() {
       let a = Number(document.getElementById("num1").value);
@@ -19,11 +24,19 @@
       document.getElementById("res").innerText = a + b;
     }
     // TEAM FUNCTIONS PLACEHOLDER
-     function sub() {
+    function sub() {
       let a = Number(document.getElementById("num1").value);
       let b = Number(document.getElementById("num2").value);
       document.getElementById("res").innerText = a - b;
     }
+
+    function divide() {
+      let a = Number(document.getElementById("num1").value);
+      let b = Number(document.getElementById("num2").value);
+      document.getElementById("res").innerText = (b === 0) ? "Cannot divide by 0" : (a
+        / b);
+    }
   </script>
 </body>
+
 </html
