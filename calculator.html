@@ -7,8 +7,11 @@
   <input type="number" id="num2" placeholder="Second number"><br><br>
   <!-- Abebe: Addition -->
   <button onclick="add()">Add (+)</button>
+  <button onclick="sub()">sub (-)</button>
   <!-- TEAM BUTTONS PLACEHOLDER -->
   <h3>Result: <span id="res">0</span></h3>
+    
+  
   <script>
     function add() {
       let a = Number(document.getElementById("num1").value);
@@ -16,6 +19,11 @@
       document.getElementById("res").innerText = a + b;
     }
     // TEAM FUNCTIONS PLACEHOLDER
+     function sub() {
+      let a = Number(document.getElementById("num1").value);
+      let b = Number(document.getElementById("num2").value);
+      document.getElementById("res").innerText = a - b;
+    }
   </script>
 </body>
 </html
